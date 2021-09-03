@@ -72,6 +72,7 @@ function groupByDay(data) {
 }
 
 function groupByWeek(data) {
+	//returns object {date: cards number}
 	const groupObj = {};
 	data.forEach(el => {
 		const stringDate = el.startDate.split(' ')[0].split('-');
@@ -151,11 +152,9 @@ function renderChart(cardsData) {
 function setActive(e) {
 	button.forEach( btn => btn.classList.remove("active"))
 	e.currentTarget.classList.add("active");
-
 }
 
 button.forEach( btn => {
 	btn.addEventListener("click", handleFiles, false);
 	btn.addEventListener("click", setActive, false); 
-	
 });
