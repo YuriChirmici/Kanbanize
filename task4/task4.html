@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.container {
+			width: 100%;
+			max-width: 1170px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+
+		.upload {
+			text-align: center;
+		}
+
+		.buttons {
+			display: none;
+			justify-content: center;
+		}
+
+		.btn {
+			margin: 10px 25px;
+			padding: 5px 15px;
+			border: 1px solid black;
+			outline: 0;
+			background-color: #ccc;
+			border-radius: 3px;
+
+			font-size: 18px;
+			transition: background .1s linear, color .1s linear;
+		}
+
+		.btn:hover {
+			background-color: #333;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="upload">
+			<input id="file" type="file" name="file">
+		</div>
+		<canvas id="myChart"></canvas>
+
+		<div class="buttons">
+			<button class="btn active" id="day">Day</button>
+			<button class="btn" id="week">Week</button>
+			<button class="btn" id="month">Month</button>
+		</div>
+	</div>
+
+	<!-- Chart -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="task4.js"></script>
+</body>
+</html>
